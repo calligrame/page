@@ -1,0 +1,8 @@
+.flower {
+  position: absolute;
+  -webkit-transition: all 2s ease-in-out;
+}
+
+.flower.disable {
+  opacity: 0;
+}

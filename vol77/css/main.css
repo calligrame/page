@@ -1,0 +1,462 @@
+/* 전체 콘테이너 */
+#fullpage_container {
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#fullpage_container::-webkit-scrollbar {
+  display: none;
+}
+
+/* 이달의 테마 */
+#main-section {
+  background-image: url("../img/header-obj-pc.png");
+  background-repeat: no-repeat;
+  background-size: calc(100% - 60%);
+  background-color: var(--color-theme);
+  background-position-x: calc(100% - 100px);
+  background-position-y: bottom;
+  padding: 0 100px;
+}
+
+#theme {
+  display: flex;
+}
+
+#theme-magazine-title {
+  width: 700px;
+  height: 350px;
+  background-image: url("../img/header-obj-pc-title.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: calc(100% - 45%);
+  transform: translateX(-5px);
+}
+#theme-text-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(70px);
+}
+#theme-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+#theme-text {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  color: white;
+  margin-bottom: 70px;
+}
+.vol-num {
+  width: 75px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* 콘텐츠 페이지 */
+.sub-wrap {
+  display: flex;
+  height: 100%;
+  overflow: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.content_title {
+  font-weight: bold;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--color-theme);
+}
+.sub-wrap::-webkit-scrollbar {
+  display: none;
+}
+
+/* 왼쪽 배너. 배경이미지 매 호마다 바꾸기. */
+#left_banner {
+  flex: 0.25;
+  width: 100%;
+  height: 100%;
+  background-size: 120%;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-image: url("../img/header-obj-pc.png");
+  background-repeat: no-repeat;
+  background-color: var(--color-theme);
+}
+
+/* 오른쪽 콘텐츠 컨테이너. */
+#right_contents {
+  overflow: scroll;
+  flex: 0.75;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+#right_contents::-webkit-scrollbar {
+  display: none;
+}
+
+/* 콘텐츠 컨테이너 공통 */
+.content_title {
+  font-weight: bold;
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--color-theme);
+}
+
+/* 기사 제목 */
+.item:hover {
+  cursor: pointer;
+}
+
+.main_thumb {
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.main_thumb img {
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+}
+
+#message_wrap {
+  height: auto;
+  padding: 100px;
+}
+
+.special_thumb {
+  overflow: hidden;
+}
+.special_thumb img {
+  width: 100%;
+}
+
+.special_message_wrap {
+  display: flex;
+  gap: 20px;
+  height: 674px;
+  margin-bottom: 80px;
+}
+
+.special_message_wrap .item {
+  position: relative;
+  overflow: hidden;
+}
+
+.special-text-box {
+  background-color: #3a3a3ab4;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px 20px;
+}
+.special-cate {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#greetings {
+  background-color: burlywood;
+  flex: 0.5;
+}
+
+#wishes {
+  flex: 0.5;
+  background-color: burlywood;
+}
+
+.message-items-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+.message-item:nth-of-type(1) .message_thumb {
+  border-radius: 70px 0 0 0;
+}
+.message-item:nth-of-type(2) .message_thumb {
+  border-radius: 0 70px 0 0;
+}
+
+.message-item:nth-of-type(3) .message_thumb {
+  border-radius: 0 0 0 70px;
+}
+
+.message-item:nth-of-type(4) .message_thumb {
+  border-radius: 0 0 70px 0;
+}
+
+.message_thumb {
+  width: 100%;
+  height: fit-content;
+}
+
+.message-item:hover .main_thumb {
+  border-radius: 0 0 0 0;
+}
+.item:hover .main_thumb img {
+  transform: scale(1.1);
+}
+
+.btn-magazine-list {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#wrap {
+  position: relative;
+}
+
+#together_wrap {
+  height: auto;
+  padding: 100px;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.together-thumb {
+  width: 100%;
+  height: fit-content;
+}
+
+#insight_wrap {
+  background-color: #f1f4f8;
+  padding: 100px;
+}
+
+.insight-items-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-rows: 1fr 1fr;
+  width: 100%;
+  gap: 20px;
+}
+
+.insight_thumb {
+  width: 100%;
+  height: fit-content;
+  background-color: lightskyblue;
+}
+
+#talknsmart_wrap {
+  padding: 100px;
+}
+
+.talknsmart-items-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width: 100%;
+  gap: 20px;
+}
+
+.talknsmart_thumb {
+  width: 100%;
+  height: fit-content;
+  background-color: olive;
+}
+
+.item-cate {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.item-title,
+.special-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.item-cate {
+  color: var(--color-theme);
+}
+.item-title {
+  color: #3a3a3a;
+}
+
+#line1 {
+  background: #aeaeae;
+  height: 1px;
+  width: 100%;
+}
+#footer_wrap {
+  width: 100%;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  gap: 20px;
+}
+.footer-info {
+  color: white;
+  line-height: 40px;
+}
+
+/* 반응형 : 태블릿 */
+@media all and (max-width: 1024px) {
+  #main-section {
+    background-image: none;
+  }
+}
+
+/* 반응형 : 모바일 */
+@media all and (max-width: 768px) {
+  .mt50 {
+    margin-top: 0 !important;
+  }
+  .item-cate,
+  .special-cate {
+    font-size: 0.7rem;
+  }
+  #main-section {
+    background-color: var(--color-theme);
+    background-image: url("../img/header-obj-mob.png");
+    background-position: center bottom;
+    background-size: calc(100% - 70%);
+    background-color: var(--color-theme);
+    padding: 0 40px;
+  }
+  #theme {
+    height: 100%;
+    align-items: center;
+  }
+  #theme-text-wrap {
+    text-align: center;
+    width: 100%;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: column;
+  }
+  .vol-num {
+    width: 50px;
+    order: 2;
+    margin-bottom: 30px;
+  }
+  #theme-text {
+    margin: 0 auto;
+    width: auto;
+    order: 3;
+  }
+  #theme-title {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  #theme-desc {
+    font-size: 0.5rem;
+    line-height: 0.9rem;
+  }
+  #theme-empty {
+    display: none;
+  }
+  #theme-magazine-title {
+    display: none;
+  }
+  #theme-obj {
+    width: 180px;
+    height: 150px;
+    background-image: url("../img/header-obj-mob-title.png");
+    background-position-x: calc(100% - 70%);
+    background-position-y: center;
+    background-size: contain;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    order: 1;
+  }
+  #message_wrap {
+    padding: 100px 40px;
+  }
+  .message-items-wrap {
+    display: block;
+  }
+  .message_thumb {
+    border-radius: 0 !important;
+    height: fit-content;
+  }
+  .special_message_wrap {
+    flex-direction: column;
+  }
+  #together_wrap {
+    padding: 40px;
+  }
+  .together-thumb img {
+    width: 100%;
+  }
+  .special-title,
+  .item-title {
+    font-size: 0.8rem;
+  }
+  .special-text-box {
+    justify-content: center;
+  }
+  .special-cate {
+    margin-top: 0;
+  }
+  .special-title {
+    margin-bottom: 0;
+  }
+  #footer_wrap {
+    flex-direction: column;
+  }
+  .footer-info {
+    text-align: center;
+  }
+  .talknsmart-items-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-info {
+    font-size: 0.7rem;
+    line-height: 1.2rem;
+  }
+}
+
+/* 반응형 : 기타 어색한 것들 */
+@media all and (max-width: 1440px) {
+  .special_message_wrap {
+    height: auto;
+  }
+  #left_banner {
+    display: none;
+  }
+  #right_contents {
+    flex: 1;
+  }
+
+  #message_wrap,
+  #together_wrap,
+  #insight_wrap,
+  #talknsmart_wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .special_thumb img {
+    width: 100%;
+  }
+}

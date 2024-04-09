@@ -1,0 +1,118 @@
+/* 지난호 보기 */
+.half-gradient {
+  background-image: url("../img/bg_magazine_list.jpg");
+}
+.magazine-list-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+#magazine-list-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: white;
+}
+.magazine-list {
+  width: 960px;
+}
+.magazine-thumb-wrap {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: center;
+  gap: 40px;
+}
+.thumb-pagenation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-pagenation {
+  width: 40px;
+  height: 40px;
+}
+.icon-arrow {
+  stroke-width: 3.5;
+  color: white;
+}
+.thumb-nav-item {
+  width: 100%;
+  height: auto;
+}
+.magazine-cover-big {
+  width: 292px;
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+.slick-active {
+  opacity: 1 !important;
+}
+.magazine-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.magazine-tool-btn {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+.magazine-tool-btn:hover {
+  background-color: white;
+  font-weight: 600;
+}
+.magazine-tool-btn:hover a {
+  color: #3a3a3a;
+  font-weight: bold;
+}
+.magazine-cover-small {
+  width: 165px;
+  height: 209px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.magazine-title {
+  margin-top: 20px;
+  font-weight: 600;
+}
+.vol-77 {
+  background-image: url("../img/magazine_list/vol77.jpg");
+}
+.vol-76 {
+  background-image: url("../img/magazine_list/vol76.jpg");
+}
+.vol-75 {
+  background-image: url("../img/magazine_list/vol75.jpg");
+}
+.vol-74 {
+  background-image: url("../img/magazine_list/vol74.jpg");
+}
+.vol-73 {
+  background-image: url("../img/magazine_list/vol73.jpg");
+}
+.vol-72 {
+  background-image: url("../img/magazine_list/vol72.jpg");
+}
+.vol-71 {
+  background-image: url("../img/magazine_list/vol71.jpg");
+}
+.vol-70 {
+  background-image: url("../img/magazine_list/vol70.jpg");
+}
