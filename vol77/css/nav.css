@@ -286,6 +286,9 @@ input:checked ~ .tab-content-wrap {
   #full-nav {
     display: none;
   }
+  #header {
+    height: 70px;
+  }
   #mobile-full-nav {
     display: block;
   }
@@ -296,7 +299,7 @@ input:checked ~ .tab-content-wrap {
     font-size: 0.7rem;
   }
   #mobile-full-nav.active {
-    top: 100px;
+    top: 70px;
   }
   #page-categories,
   #webzine-title {
