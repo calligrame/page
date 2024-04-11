@@ -720,6 +720,9 @@
   .content_subtitle {
     font-size: 1.25rem;
   }
+  .caption {
+    font-size: 0.6rem;
+  }
   .sub_title h2 {
     font-size: 22px;
   }
@@ -759,6 +762,13 @@
   .content_wrap {
     font-size: 1rem;
   }
+  .readers-content-title {
+    font-size: 1.7rem;
+  }
+  #btn-carwebsite {
+    font-size: 0.7rem;
+    line-height: 30px;
+  }
   .magazine-tools {
     width: 100%;
     flex-direction: row;
@@ -796,20 +806,24 @@
     flex-direction: column;
   }
   .btn-subbuttons {
-    padding: 12px 50px;
+    padding: 02px 20px;
+    font-size: 0.6rem;
   }
   .sub_title {
     margin-bottom: 15px;
   }
   .sub_title h2 {
-    font-size: 20px;
+    font-size: 17px;
   }
   .content_image {
     margin-bottom: 25px;
   }
   .content_article p {
     font-size: 0.8rem;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+  }
+  .tip-list-item {
+    font-size: 0.8rem;
   }
   .item-text {
     font-size: 0.9rem;
@@ -844,6 +858,21 @@
     flex-direction: column-reverse;
     gap: 20px;
   }
+  .deco-text-box {
+    position: relative;
+    top: 0;
+    transform: translateX(0);
+  }
+
+  .forth-text-box-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .forth-text-box-reverse.mb80 {
+    margin-bottom: 0 !important;
+  }
   .article-box p {
     width: 100%;
   }
@@ -867,19 +896,20 @@
   }
   .comment-icon {
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
   }
   .comment-icon img {
-    width: 60px;
+    width: 40px;
   }
   .g0 {
     gap: 0 !important;
   }
   .quiz-options p {
-    font-size: 1.2rem !important;
+    font-size: 0.8rem !important;
   }
   .dot-frame {
     padding: 20px;
+    width: 100%;
   }
   .colored-box {
     padding: 20px;

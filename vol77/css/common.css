@@ -732,5 +732,6 @@ summary {
 }
 
 .underline {
-  text-decoration: underline;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--color-theme);
 }
