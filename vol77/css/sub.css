@@ -774,6 +774,7 @@
     width: 100%;
     flex-direction: row;
   }
+  .readers-writer,
   .readers-lead {
     font-size: 0.8rem;
   }
