@@ -45,7 +45,7 @@ $(document).ready(function () {
     document.execCommand("copy");
     document.body.removeChild(textarea);
     alert("URL이 복사되었습니다.");
-    showToast("URL이 복사되었습니다.");
+    // showToast("URL이 복사되었습니다.");
   });
 
   const showToast = (content) => {
@@ -54,8 +54,12 @@ $(document).ready(function () {
     $("#toast-box").addClass("show");
     setTimeout(() => {
       $("#toast-box").removeClass("show");
-    }, 1500); //DOM을 충분히 읽어올 수 있도록 시간 주기
+    }, 2500); //DOM을 충분히 읽어올 수 있도록 시간 주기
   };
+
+  if (currentFileIndex === 8) {
+    showToast("화면을 클릭하면 꽃이 나와요");
+  }
 
   //주석 팝업
   const popCaption = (posX, posY, index) => {
