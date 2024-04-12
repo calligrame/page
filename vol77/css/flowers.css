@@ -6,3 +6,9 @@
 .flower.disable {
   opacity: 0;
 }
+
+@media all and (max-width: 768px) {
+  .flower {
+    width: 50px;
+  }
+}
