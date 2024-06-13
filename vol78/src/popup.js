@@ -33,23 +33,20 @@ $(document).ready(function () {
     layer_popup("#layer1");
   }
 
-  function isCookieExist() {
+  function isCookieExist(el) {
+    console.log(el);
     var x,
       y,
       cookiedata = document.cookie.split(";");
-    console.log(cookiedata);
     for (i = 0; i < cookiedata.length; i++) {
       cookiedata[i] = cookiedata[i].replace(/^\s+|\s+$/g, "");
     }
     console.log(cookiedata.indexOf("popup=done"));
     if (cookiedata.indexOf("popup=done") < 0) {
-      console.log("show?");
-
-      $("#layer1").show();
+      $(el).show();
       return true;
     } else {
-      console.log("hide?");
-      $("#layer1").hide();
+      $(el).hide();
       return false;
     }
   }
@@ -67,10 +64,11 @@ $(document).ready(function () {
   }
 
   function layer_popup(el) {
-    if (isCookieExist() === false) {
+    if (isCookieExist(el) === false) {
       return;
     } else {
       var $el = $(el); //레이어의 id를 $el 변수에 저장
+
       var isDim = $el.prev().hasClass("dimBg"); //dimmed 레이어를 감지하기 위한 boolean 변수
 
       isDim ? $(".dim-layer").fadeIn() : $el.fadeIn();
@@ -82,10 +80,17 @@ $(document).ready(function () {
 
       // 화면의 중앙에 레이어를 띄운다.
       if ($elHeight < docHeight || $elWidth < docWidth) {
-        $el.css({
-          marginTop: -$elHeight / 2,
-          marginLeft: -$elWidth / 2,
-        });
+        if ($el === "#layer2") {
+          $el.css({
+            marginTop: -$elHeight / 2,
+            marginLeft: -$elWidth / 2,
+          });
+        } else {
+          $el.css({
+            marginTop: -$elHeight / 2,
+            marginLeft: -$elWidth / 2,
+          });
+        }
       } else {
         $el.css({ top: 0, left: 0 });
       }
