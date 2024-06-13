@@ -59,8 +59,8 @@
   filter: alpha(opacity=50);
 }
 
-.dim-layer .pop-layer {
-  display: block;
+#layer2 {
+  width: 80%;
 }
 
 a.btn-layerClose {
