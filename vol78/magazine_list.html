@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/magazine_list.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <script defer src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <script defer src="src/lib/slick.min.js"></script>
+    <script defer src="src/magazineList.js"></script>
+    <title>지난호보기</title>
+  </head>
+  <body>
+    <header id="header"></header>
+    <div class="container half-gradient">
+      <div class="magazine-list-wrap">
+        <h3 id="magazine-list-title">지난호 보기</h3>
+
+        <div class="magazine-list">
+          <div class="magazine-thumb-wrap">
+            <div class="thumb-pagenation"></div>
+            <div class="magazine-cover-big">
+              <div class="thumb-nav-item">
+                <div id="vol_77" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol77.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_76" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol76.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_75" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol75.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_74" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol74.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_73" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol73.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_72" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol72.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_71" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol71.jpg" alt="" />
+                </div>
+              </div>
+              <div class="thumb-nav-item">
+                <div id="vol_70" class="magazine-cover-big">
+                  <img src="img/magazine_list/vol70.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="magazine-tools">
+              <a
+                href=""
+                target="_blank"
+                id="btn_download"
+                class="magazine-tool-btn"
+                >PDF 내려받기</a
+              >
+
+              <a
+                href=""
+                target="_blank"
+                id="btn_enter"
+                class="magazine-tool-btn"
+                >웹진 바로가기</a
+              >
+            </div>
+          </div>
+          <div class="magazine-thumb-nav">
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol77/index.html"
+              data-download="http://tsmagazine.co.kr/common/files/vol77.pdf"
+            >
+              <div
+                id="vol_77"
+                class="magazine-cover-small vol-77"
+                data-link="http://tsmagazine.co.kr/page/vol77/index.html"
+                data-download="http://tsmagazine.co.kr/common/files/vol77.pdf"
+              ></div>
+              <h6 class="magazine-title">2024 03+04 VOL.77</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol76/index.html"
+              data-download="http://tsmagazine.co.kr/common/files/vol76.pdf"
+            >
+              <div
+                id="vol_76"
+                class="magazine-cover-small vol-76"
+                data-link="http://tsmagazine.co.kr/page/vol76/index.html"
+                data-download="http://tsmagazine.co.kr/common/files/vol76.pdf"
+              ></div>
+              <h6 class="magazine-title">2024 01+02 VOL.76</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol75/index.html"
+              data-download="https://www.kotsa.or.kr/common/download.do;jsessionid=wGlUwTTI4AZWicofA5SRhi0GiacOgRB0JQwb8b_q.home21?atflIdxx=F_magazine71895156&atflSeqn=0"
+            >
+              <div id="vol_75" class="magazine-cover-small vol-75"></div>
+              <h6 class="magazine-title">2023 11+12 VOL.75</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol74/index.html"
+              data-download="https://www.kotsa.or.kr/common/download.do?atflIdxx=F_magazine71712561&atflSeqn=0"
+            >
+              <div id="vol_74" class="magazine-cover-small vol-74"></div>
+              <h6 class="magazine-title">2023 09+10 VOL.74</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol73/index.html"
+              data-download="https://www.kotsa.or.kr/common/download.do?atflIdxx=F_magazine71601688&atflSeqn=0"
+            >
+              <div id="vol_73" class="magazine-cover-small vol-73"></div>
+              <h6 class="magazine-title">2023 07+08 VOL.73</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol72/index.html"
+              data-download="https://www.kotsa.or.kr/common/download.do?atflIdxx=F_magazine71599570&atflSeqn=0"
+            >
+              <div id="vol_72" class="magazine-cover-small vol-72"></div>
+              <h6 class="magazine-title">2023 05+06 VOL.72</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol71/index.html"
+              data-download="https://www.kotsa.or.kr/common/download.do?atflIdxx=F_magazine71446549&atflSeqn=0"
+            >
+              <div id="vol_71" class="magazine-cover-small vol-71"></div>
+              <h6 class="magazine-title">2023 03+04 VOL.71</h6>
+            </div>
+            <div
+              class="thumb-nav-item"
+              data-link="http://tsmagazine.co.kr/page/vol70/index.html"
+              data-download="https://www.kotsa.or.kr/common/download.do?atflIdxx=F_magazine71373625&atflSeqn=0"
+            >
+              <div id="vol_70" class="magazine-cover-small vol-70"></div>
+              <h6 class="magazine-title">2023 01+02 VOL.70</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
