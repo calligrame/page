@@ -1,0 +1,408 @@
+/* 지난호 보기 */
+.half-gradient {
+  background-image: url("../img/bg_magazine_list.jpg");
+}
+.magazine-list-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+#magazine-list-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: white;
+}
+.magazine-list {
+  width: 960px;
+}
+.magazine-thumb-wrap {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: center;
+  gap: 40px;
+}
+.thumb-pagenation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btn-pagenation {
+  width: 40px;
+  height: 40px;
+}
+.icon-arrow {
+  stroke-width: 3.5;
+  color: white;
+}
+.thumb-nav-item {
+  width: 100%;
+  height: auto;
+}
+.magazine-cover-big {
+  width: 292px;
+  height: 370px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.4);
+}
+.slick-active {
+  opacity: 1 !important;
+}
+.magazine-tools {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.magazine-tool-btn {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  transition: all 0.35s ease-in-out;
+}
+.magazine-tool-btn:hover {
+  background-color: white;
+  font-weight: 600;
+}
+.magazine-tool-btn:hover a {
+  color: #3a3a3a;
+  font-weight: bold;
+}
+.magazine-cover-small {
+  width: 165px;
+  height: 209px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+.magazine-title {
+  margin-top: 20px;
+  font-weight: 600;
+}
+.vol-80 {
+  background-image: url("../img/magazine_list/vol80.jpg");
+}
+.vol-79 {
+  background-image: url("../img/magazine_list/vol79.jpg");
+}
+.vol-78 {
+  background-image: url("../img/magazine_list/vol78.jpg");
+}
+.vol-77 {
+  background-image: url("../img/magazine_list/vol77.jpg");
+}
+.vol-76 {
+  background-image: url("../img/magazine_list/vol76.jpg");
+}
+.vol-75 {
+  background-image: url("../img/magazine_list/vol75.jpg");
+}
+.vol-74 {
+  background-image: url("../img/magazine_list/vol74.jpg");
+}
+.vol-73 {
+  background-image: url("../img/magazine_list/vol73.jpg");
+}
+.vol-72 {
+  background-image: url("../img/magazine_list/vol72.jpg");
+}
+.vol-71 {
+  background-image: url("../img/magazine_list/vol71.jpg");
+}
+.vol-70 {
+  background-image: url("../img/magazine_list/vol70.jpg");
+}
+
+@media all and (max-width: 1024px) {
+  .magazine-list {
+    width: 100%;
+    padding: 40px;
+  }
+  .content_wrap {
+    width: 100%;
+    padding: 100px 40px;
+  }
+  .content_title {
+    font-size: 1.5rem;
+  }
+  .content_subtitle {
+    font-size: 1.25rem;
+  }
+  .caption {
+    font-size: 0.6rem;
+  }
+  .sub_title h2 {
+    font-size: 22px;
+  }
+  #side_menu_wrap {
+    display: none;
+  }
+  #button_wrap {
+    width: 100%;
+    justify-content: center;
+  }
+  #btn_top {
+    margin: 0 10px;
+  }
+  .content_button {
+    flex: 1;
+  }
+  .theme-section {
+    width: auto;
+    background-size: calc(100% - 65%);
+  }
+  .grid-box {
+    display: block;
+  }
+  .box-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 70px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .content_wrap {
+    font-size: 1rem;
+    padding: 100px 10px;
+  }
+  .readers-content-title {
+    font-size: 1.7rem;
+  }
+  #btn-carwebsite {
+    font-size: 0.7rem;
+    line-height: 30px;
+  }
+  .magazine-tools {
+    width: 100%;
+    flex-direction: row;
+  }
+  .readers-writer,
+  .readers-lead {
+    font-size: 0.8rem;
+  }
+  .magazine-cover-big {
+    width: 200px;
+    height: fit-content;
+  }
+  #toast-box {
+    width: 80%;
+    text-align: center;
+  }
+  #toast-box > span {
+    font-size: 0.7rem;
+  }
+  .container {
+    padding-top: 70px;
+  }
+  .grid-box {
+    width: 100%;
+  }
+  .lead {
+    padding: 15px;
+  }
+  .theme-section {
+    font-size: 2rem;
+  }
+  .magazine-cover-big img {
+    width: 100%;
+  }
+  .magazine-cover-small {
+    width: 90px;
+    height: 121px;
+  }
+  .category {
+    font-size: 1rem;
+  }
+  .content_title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+  .magazine-tool-btn {
+    border-color: var(--color-theme);
+    flex: 1;
+    color: var(--color-theme);
+    background-color: white;
+    font-weight: 600;
+  }
+  .magazine-thumb-wrap {
+    flex-direction: column;
+  }
+  .btn-subbuttons {
+    padding: 02px 20px;
+    font-size: 0.6rem;
+  }
+  .sub_title {
+    margin-bottom: 15px;
+  }
+  .sub_title h2 {
+    font-size: 17px;
+  }
+  .content_image {
+    margin-bottom: 25px;
+  }
+  .content_article p {
+    font-size: 0.8rem;
+    margin-bottom: 50px;
+  }
+  .tip-list-item {
+    font-size: 0.8rem;
+  }
+  .item-text {
+    font-size: 0.9rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    width: 100%;
+  }
+  .half-text-box {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: none;
+    gap: 20px;
+  }
+  .half-text-box.reverse .img-frame {
+    grid-row: 1;
+  }
+  .half-text-box.mb80 {
+    margin-bottom: 60px !important;
+  }
+
+  .third-text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .third-text-box-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .deco-text-box {
+    position: relative;
+    top: 0;
+    transform: translateX(0);
+  }
+
+  .forth-text-box-reverse {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .forth-text-box-reverse.mb80 {
+    margin-bottom: 0 !important;
+  }
+  .article-box p {
+    width: 100%;
+  }
+  .header-container {
+    width: 100%;
+  }
+  .readers-message-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .reader-name {
+    font-size: 1.25rem;
+  }
+  .plr-50 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .comment-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .comment-icon {
+    flex-direction: row;
+    gap: 10px;
+  }
+  .comment-icon img {
+    width: 40px;
+  }
+  .g0 {
+    gap: 0 !important;
+  }
+  .quiz-options p {
+    font-size: 0.8rem !important;
+  }
+  .dot-frame {
+    padding: 20px;
+    width: 100%;
+  }
+  .colored-box {
+    padding: 20px;
+  }
+  .circle-frame {
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+  }
+  .readers_header {
+    padding: 0 40px;
+  }
+  .winner-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px;
+    font-size: 0.9rem !important;
+  }
+  .quiz-box {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .quiz-box .sub_title {
+    margin-bottom: 0 !important;
+  }
+  .quiz-box h3 {
+    margin-bottom: 20px;
+  }
+  .hint-box {
+    font-size: 1rem;
+  }
+  .thumb-pagenation {
+    transform: translateY(-100%);
+  }
+  .half-w50 {
+    width: 75% !important;
+  }
+  #btn-review {
+    margin-bottom: 10px;
+  }
+  #btn-unsubscribe {
+    margin-bottom: 40px;
+  }
+  .half-text-box {
+    margin-bottom: 40px;
+  }
+  .caption-text-box {
+    flex-direction: column-reverse;
+  }
+  .caption-text-box p {
+    margin-bottom: 0;
+  }
+  .caption-text-box .caption {
+    margin-bottom: 40px;
+  }
+}

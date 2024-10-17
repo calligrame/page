@@ -1,0 +1,14 @@
+.flower {
+  position: absolute;
+  -webkit-transition: all 2s ease-in-out;
+}
+
+.flower.disable {
+  opacity: 0;
+}
+
+@media all and (max-width: 768px) {
+  .flower {
+    width: 50px;
+  }
+}
