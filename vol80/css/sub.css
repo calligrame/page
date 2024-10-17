@@ -77,6 +77,10 @@
   margin-bottom: 70px;
   /* box-shadow: 0px 10px 26px -3px rgba(0, 0, 0, 0.2); */
 }
+.content_image_temp_frame {
+  height: 320px;
+  overflow: hidden;
+}
 
 /* 칼럼명 */
 .column {
@@ -145,9 +149,28 @@
 .content_article p {
   margin-bottom: 80px;
 }
-.img-frame {
-  height: fit-content;
+.img-frame-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 385px;
 }
+.img-frame {
+  flex: 0.99;
+  height: 100%;
+  overflow: hidden;
+}
+.img-frame-cut {
+  flex: 0.99;
+  overflow: hidden;
+}
+.img-frame-wrap img {
+  width: 120% !important;
+  max-width: 200% !important;
+}
+.caption-frame {
+  flex: 0.01;
+}
+
 .btn-article {
   background-color: var(--color-theme);
   display: block;
@@ -841,6 +864,11 @@
     width: 100%;
     flex-direction: row;
   }
+  .half-pic-box {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
   .readers-writer,
   .readers-lead {
     font-size: 0.8rem;
@@ -906,6 +934,10 @@
   .content_image {
     margin-bottom: 25px;
   }
+  .content_image_temp_frame {
+    height: auto;
+    overflow: hidden;
+  }
   .content_article p {
     font-size: 0.8rem;
     margin-bottom: 50px;
@@ -916,7 +948,9 @@
   .item-text {
     font-size: 0.9rem;
   }
-
+  .caption {
+    line-height: 1.2rem;
+  }
   .grid {
     grid-template-columns: 1fr;
   }
@@ -956,7 +990,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    text-align: center;
   }
   .forth-text-box-reverse.mb80 {
     margin-bottom: 0 !important;
