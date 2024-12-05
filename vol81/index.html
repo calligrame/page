@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=10.0, user-scalable=yes"
+    />
+    <!-- 웹진 정보 -->
+    <title>TS한국교통안전공단</title>
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TS한국교통안전공단" />
+    <meta name="keywords" content="TS한국교통안전공단" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TS한국교통안전공단" />
+    <meta
+      property="og:image"
+      content="/page/vol80/img/magazine_list/vol80.jpg"
+    />
+    <meta property="og:description" content="TS한국교통안전공단" />
+    <meta property="og:url" content="/page/vol80/index.html" />
+
+    <link rel="canonical" href="http://tsmagazine.co.kr/" />
+
+    <!-- CSS -->
+    <!-- 공통CSS -->
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- 폰트 : Pretendard -->
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <!-- 메인화면 CSS -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- 팝업CSS -->
+    <link rel="stylesheet" href="css/popup.css" />
+    <!-- 내비게이션 CSS -->
+    <link rel="stylesheet" href="css/nav.css" />
+
+    <!-- JS -->
+    <!-- jQuery Core -->
+    <script defer src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- 풀페이지 라이브러리 -->
+    <script defer src="src/lib/jquery.fullpage.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+    <script defer src="src/fullpage-settings.js"></script>
+
+    <!-- Swiper 라이브러리 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <!-- Slick 라이브러리 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script defer src="src/lib/slick.min.js"></script>
+
+    <!-- Mdernizr -->
+    <script src="src/lib/modernizr.js"></script>
+
+    <!-- 메인화면용 js -->
+    <script defer src="src/popup.js"></script>
+    <script defer src="src/main.js"></script>
+    <!-- 팝업창 js -->
+
+    <!-- 구글애널리틱스 -->
+    <!-- Google tag (gtag.js) -->
+    <!-- <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-G07GH35BVS"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-G07GH35BVS");
+    </script> -->
+  </head>
+  <body>
+    <!-- PC 팝업 -->
+    <div id="layer1" class="pop-layer">
+      <div class="pop-container">
+        <div class="pop-conts">
+          <!--content //-->
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf6BtnROC1CDyaO-lzxNNftKCFt2zTCrovoBhcexLvbhoIhSw/viewform"
+            target="_blank"
+            ><img src="img/popup.png" alt=""
+          /></a>
+
+          <div class="pop-button-wrap">
+            <div class="btn-l">
+              <a href="#" class="btn-todayClose">오늘 하루 보지 않기</a>
+            </div>
+            <div class="btn-r">
+              <a href="#" class="btn-layerClose">닫기</a>
+            </div>
+          </div>
+
+          <!--// content-->
+        </div>
+      </div>
+    </div>
+    <!-- PC 팝업 -->
+    <!-- 모바일 팝업 -->
+    <div class="dim-layer">
+      <div class="dimBg"></div>
+      <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+          <div class="pop-conts">
+            <!--content //-->
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSf6BtnROC1CDyaO-lzxNNftKCFt2zTCrovoBhcexLvbhoIhSw/viewform"
+              target="_blank"
+              ><img src="img/popup.png" alt=""
+            /></a>
+
+            <div class="pop-button-wrap">
+              <div class="btn-l">
+                <a href="#" class="btn-todayClose">오늘 하루 보지 않기</a>
+              </div>
+              <div class="btn-r">
+                <a href="#" class="btn-layerClose">닫기</a>
+              </div>
+            </div>
+            <!--// content-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 모바일 팝업 -->
+    <div id="wrap">
+      <div class="gnbBg"></div>
+      <!-- header -->
+      <header id="header"></header>
+      <!-- header -->
+
+      <!-- fullpage -->
+      <div id="fullpage_container">
+        <div id="fullpage" class="main">
+          <div class="section" id="main-section" style="height: 100%">
+            <!-- main -->
+            <div id="theme">
+              <div id="theme-text-wrap">
+                <div id="theme-magazine-title"></div>
+                <div id="theme-obj"></div>
+                <div id="theme-text" class="mt50">
+                  <h1 id="theme-title">NETWORK</h1>
+                  <p id="theme-desc">
+                    IT 기술과 모빌리티의 연결이 어색하지 않은 시대, <br />
+                    모든 교통망이 그물처럼 촘촘히 엮인 ‘스마트시티’를 꿈꾸며
+                    <br />
+                    전 세계가 미래 모빌리티 생태계 조성에 박차를 가하고 있다.
+                  </p>
+                </div>
+                <div class="vol-num">
+                  <img src="img/vol-81.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!-- main -->
+          </div>
+          <div class="section" id="sub-section">
+            <div class="sub-wrap">
+              <!-- 왼쪽 배너 -->
+
+              <section id="left_banner"></section>
+              <!-- 왼쪽 배너 -->
+
+              <!-- 오른쪽 콘텐츠 목록 -->
+              <section id="right_contents">
+                <!-- MESSAGE -->
+                <section id="message_wrap">
+                  <h3 class="content_title">MESSAGE</h3>
+                  <ul class="message-items-wrap">
+                    <li class="message-item item">
+                      <a href="sub/sub1.html">
+                        <div class="message_thumb main_thumb">
+                          <img src="img/thumb-sub1.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">TS 포커스</h6>
+                        <h4 class="item-title">
+                          TS 공공데이터로 더욱 안전하고 편리해지는 세상
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="message-item item">
+                      <a href="sub/sub2.html">
+                        <div class="message_thumb main_thumb">
+                          <img src="img/thumb-sub2.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">TS 뉴스</h6>
+                        <h4 class="item-title">
+                          김천드론자격센터, 장애물 없는 생활환경 ‘우수’ 인증 외
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="message-item item">
+                      <a href="sub/sub3.html">
+                        <div class="message_thumb main_thumb">
+                          <img src="img/thumb-sub3.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">TS 人터뷰</h6>
+                        <h4 class="item-title">
+                          교통안전, 빅데이터와 AI로 혁신하다! 국민의 안전을
+                          지키기 위한 더욱 스마트한 변화<br />
+                          - 디지털혁신처 주신혜 책임연구원
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="message-item item">
+                      <a href="sub/sub4.html">
+                        <div class="message_thumb main_thumb">
+                          <img src="img/thumb-sub4.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">TS Team터뷰</h6>
+                        <h4 class="item-title">베이킹 동호회 ‘빵야빵야’</h4>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <!-- MESSAGE -->
+                <!-- line -->
+                <div id="line1"></div>
+                <!-- line -->
+                <!-- TOGETHER -->
+                <section id="together_wrap">
+                  <h3 class="content_title">TOGETHER</h3>
+                  <div class="swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide item">
+                        <a href="sub/sub5.html">
+                          <div class="together-thumb main_thumb">
+                            <img src="img/thumb-sub5.png" alt="" />
+                          </div>
+                          <h6 class="item-cate">스페셜 테마_이야기</h6>
+                          <h4 class="item-title">
+                            교통·물류도 앞서가는 K-스마트시티 이야기
+                          </h4>
+                        </a>
+                      </div>
+                      <div class="swiper-slide item">
+                        <a href="sub/sub6.html">
+                          <div class="together-thumb main_thumb">
+                            <img src="img/thumb-sub6.png" alt="" />
+                          </div>
+                          <h6 class="item-cate">스페셜 테마_사람</h6>
+                          <h4 class="item-title">
+                            물류와 인류, 지식과 연결로 더 큰 가치를 만들기 위해
+                            - 비욘드엑스 김철민, 엄지용, 신승윤
+                          </h4>
+                        </a>
+                      </div>
+                      <div class="swiper-slide item">
+                        <a href="sub/sub7.html">
+                          <div class="together-thumb main_thumb">
+                            <img src="img/thumb-sub7.png" alt="" />
+                          </div>
+                          <h6 class="item-cate">슬기로운 교통생활</h6>
+                          <h4 class="item-title">
+                            손이 시려, 꽁! 차도 시려, 빵! <br />
+                            겨울철 내 차 관리 팁
+                          </h4>
+                        </a>
+                      </div>
+                      <div class="swiper-slide item">
+                        <a href="sub/sub8.html">
+                          <div class="together-thumb main_thumb">
+                            <img src="img/thumb-sub8.png" alt="" />
+                          </div>
+                          <h6 class="item-cate">TS 메이트</h6>
+                          <h4 class="item-title">
+                            올해 전국 고속도로 휴게소 최고의 음식은? <br />
+                            - 2024년 휴게소 음식 FESTA
+                          </h4>
+                        </a>
+                      </div>
+                      <div class="swiper-slide item">
+                        <a href="sub/sub9.html">
+                          <div class="together-thumb main_thumb">
+                            <img src="img/thumb-sub9.png" alt="" />
+                          </div>
+                          <h6 class="item-cate">T식백과</h6>
+                          <h4 class="item-title">
+                            “저…, 실은 저도 차량입니다” 개인형이동장치, 안전하게
+                            이용하기
+                          </h4>
+                        </a>
+                      </div>
+
+                      <div class="swiper-slide item">
+                        <a href="sub/sub10.html">
+                          <div class="together-thumb main_thumb">
+                            <img src="img/thumb-sub10.png" alt="" />
+                          </div>
+                          <h6 class="item-cate">GLOBAL 이슈</h6>
+                          <h4 class="item-title">
+                            아시아, 북미, 유럽의 빨라지는 스마트시티 시계
+                          </h4>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                  </div>
+                </section>
+                <!-- TOGETHER -->
+                <!-- INSIGHT -->
+                <section id="insight_wrap">
+                  <h3 class="content_title">INSIGHT</h3>
+                  <ul class="insight-items-wrap">
+                    <li class="insight-item item">
+                      <a href="sub/sub11.html">
+                        <div class="insight_thumb main_thumb">
+                          <img src="img/thumb-sub11.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">여행을 떠나요</h6>
+                        <h4 class="item-title">
+                          맛과 멋, 감성이 충만한 청춘과 낭만의 도시 - 춘천
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="insight-item item">
+                      <a href="sub/sub12.html">
+                        <div class="insight_thumb main_thumb">
+                          <img src="img/thumb-sub12.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">트렌드 트래킹</h6>
+                        <h4 class="item-title">
+                          피자처럼 조각조각 추구미를 모았더니 ‘내’가 되었다,
+                          추구미
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="insight-item item">
+                      <a href="sub/sub13.html">
+                        <div class="insight_thumb main_thumb">
+                          <img src="img/thumb-sub13.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">쉼, 표지판</h6>
+                        <h4 class="item-title">
+                          건조하고 나른한 겨울철 정신 바짝 차리고 운전하려면
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="insight-item item">
+                      <a href="sub/sub14.html">
+                        <div class="insight_thumb main_thumb">
+                          <img src="img/thumb-sub14.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">TS툰</h6>
+                        <h4 class="item-title">
+                          겨울철 도로살얼음 어떻게 대비할까?
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <!-- INSIGHT -->
+                <!-- TALK & SMART -->
+                <section id="talknsmart_wrap">
+                  <h3 class="content_title">
+                    T<span class="color-gray">ALK & </span>S<span
+                      class="color-gray"
+                      >MART</span
+                    >
+                  </h3>
+
+                  <ul class="talknsmart-items-wrap">
+                    <li class="talknsmart-item item">
+                      <a href="sub/sub14.html">
+                        <div class="talknsmart_thumb main_thumb">
+                          <img src="img/thumb-sub15.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">
+                          T<span class="color-gray">S상</span>식<span
+                            class="color-gray"
+                            >마</span
+                          >당
+                        </h6>
+                        <h4 class="item-title">
+                          다음 중 겨울철 도로살얼음 대비 시 주의사항이 아닌 것은
+                          무엇일까요?
+                        </h4>
+                      </a>
+                    </li>
+
+                    <li class="talknsmart-item item">
+                      <a href="sub/sub16.html">
+                        <div class="talknsmart_thumb main_thumb">
+                          <img src="img/thumb-sub16.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">독자와의 수다</h6>
+                        <h4 class="item-title">
+                          내가 사는 지역이 스마트시티가 된다면?
+                        </h4>
+                      </a>
+                    </li>
+                    <li class="talknsmart-item item">
+                      <a href="sub/sub17.html">
+                        <div class="talknsmart_thumb main_thumb">
+                          <img src="img/thumb-sub17.png" alt="" />
+                        </div>
+                        <h6 class="item-cate">TS 퀴즈</h6>
+                        <h4 class="item-title">
+                          TS 매거진과 함께 하는 초성퀴즈 이벤트
+                        </h4>
+                      </a>
+                    </li>
+                  </ul>
+                </section>
+                <!-- TALK & SMART -->
+                <!-- 푸터 -->
+                <footer id="footer_wrap">
+                  <div class="footer-logo">
+                    <img src="img/logo.png" alt="TS 한국교통안전공단 로고" />
+                  </div>
+                  <div class="footer-info">
+                    <span
+                      >39660 경상북도 김천시 혁신6로 17(율곡동,한국교통안전공단)
+                      | TEL : 1577-0990 | Copyright ⓒ TS All Rights Reserved.
+                    </span>
+                  </div>
+                </footer>
+                <!-- 푸터 -->
+              </section>
+              <!-- 오른쪽 콘텐츠 목록 -->
+            </div>
+          </div>
+
+          <!-- fullpage -->
+        </div>
+      </div>
+    </div>
+    <!-- content - main-content -->
+    <!-- // wrap -->
+  </body>
+</html>
